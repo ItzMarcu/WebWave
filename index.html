@@ -1,71 +1,58 @@
 <!DOCTYPE html>
-    <html lang="it">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Web Player - WebWave</title>
+        <title>Dystopia Preview</title>
+        <link rel="icon" href="assets/images/favicon.ico">
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img src="images/sound.png" id="header">
-            <h1>WebWave - Dystopia edition</h1>
+            <img src="assets/images/DYSTOPIA clear bg.png" id="dystopia-logo">
+            <a href="https://www.instagram.com/_dystopia.official/" target="_blank">
+                <img src="assets/images/instagram.png" id="instagram-logo">
+            </a>
         </header>
-        <section>
-            <section id="menu">
-                <div class="song">
-                    <h2>
-                        <button id="play">
-                            <img src="images/play.png" id="play-button">
-                        </button>
-                        The Death of The Wolves
-                    </h2>
-                </div>
-                <div class="song">
-                    <h2>
-                        <button id="play">
-                            <img src="images/play.png" id="play-button">
-                        </button>
-                        The Tempest
-                    </h2>
-                </div>
-                <div class="song">
-                    <h2>
-                        <button id="play">
-                            <img src="images/play.png" id="play-button">
-                        </button>
-                        Distance
-                    </h2>
-                </div>
-            </section>
-            <section id="player">
-                <div class="image">
-                    <h1>Now Playing</h1>
-                    <img src="images/sound.png" id="hold">
-                    <p id="titolo">
-                        
-                    </p>
-                </div>
-            </section>
+
+        <section id="home">
+            <div class="content">
+                <p>
+                    <h1>Dystopia</h1> <br>
+                    <h2>Band black-metal italiana</h2> <br>
+                    Ritmiche veloci e testi pieni di significato
+                    
+                </p>
+            </div>
+            <img src="assets/images/main image.jpg" id="home-image">
         </section>
 
-        <footer>
-            <button id="back-btn">
-                <img src="images/back.png" id="player-play">
-            </button> 
+        <section id="player">
+            <div class="songs">
+                <h1 id="title">Canzoni inedite</h1>
+                <button id="song">
+                    <img src="assets/images/play.png" id="play">
+                    Distance
+                </button>
+                <button id="song">
+                    <img src="assets/images/play.png" id="play">
+                    The Death Of The Wolves
+                </button>
+                <button id="song">
+                    <img src="assets/images/play.png" id="play">
+                    The Tempest
+                </button>
 
-            <button id="play-btn">
-                <img src="images/play.png" id="player-play">
-            </button>
+            </div>
 
-            <button id="forward-btn">
-                <img src="images/fast-forward.png" id="player-play">
-            </button>    
-        </footer>
+            <div class="player">
+                <img src="assets/images/player.gif" id="player-img">
+                <p id="current-song"></p>
+                <button id="pause">
+                    <img src="assets/images/pause.png" id="pause-img">
+                </button>
+            </div>
+        </section>
     </body>
-    <script src=""></script>
+    <script src="audio-handler.js"></script>
 </html>
