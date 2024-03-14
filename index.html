@@ -30,29 +30,34 @@
         <section id="player">
             <div class="songs">
                 <h1 id="title">Canzoni inedite</h1>
-                <button id="song">
+                <button class="song" id="distance">
                     <img src="assets/images/play.png" id="play">
                     Distance
                 </button>
-                <button id="song">
+                <button class="song" id="wolves">
                     <img src="assets/images/play.png" id="play">
                     The Death Of The Wolves
                 </button>
-                <button id="song">
+                <button class="song" id="tempest">
                     <img src="assets/images/play.png" id="play">
                     The Tempest
                 </button>
-
             </div>
 
             <div class="player">
-                <img src="assets/images/player.gif" id="player-img">
+                <img src="assets/images/player.gif" id="player-gif">
                 <p id="current-song"></p>
                 <button id="pause">
-                    <img src="assets/images/pause.png" id="pause-img">
+                    <img src="assets/images/play.png" id="pause-img">
                 </button>
             </div>
         </section>
+
+        <audio src="assets/audio/distance.mp3" id="distance-audio"></audio>
+
+        <audio src="assets/audio/the death of the wolves .mp3" id="wolves-audio"></audio>
+
+        <audio src="assets/audio/the tempest.mp3" id="tempest-audio"></audio>
     </body>
     <script src="audio-handler.js"></script>
 </html>

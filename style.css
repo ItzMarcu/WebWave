@@ -85,7 +85,7 @@ section#player {
     padding-top: 5vh;
 }
 
-button#song {
+.song {
     width: 100vh;
     height: 12vh;
     background-color: transparent;
@@ -103,7 +103,7 @@ button#song {
     cursor: pointer;
 }
 
-button#song:hover {
+.song:hover {
     background-color: red;
     box-shadow: 1px 1px 30px red;
     transition: all .3s ease-in-out;
@@ -124,7 +124,7 @@ img#play {
     width: 5vh;
 }
 
-img#player-img {
+img#player-gif {
     width: 50vh;
     border-radius: 8px;
     -webkit-border-radius: 8px;
